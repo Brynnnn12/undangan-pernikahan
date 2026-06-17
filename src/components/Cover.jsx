@@ -28,7 +28,7 @@ function Cover() {
   }
 
   return (
-    <section className="relative h-dvh w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -41,14 +41,14 @@ function Cover() {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white sm:px-6">
         <p
-          className="font-display text-3xl tracking-wide text-gold-light sm:text-4xl md:text-6xl"
+          className="font-display text-2xl tracking-wide text-gold-light sm:text-4xl md:text-6xl"
           data-aos="fade-down"
         >
           The Wedding Of
         </p>
 
         <h1
-          className="mt-3 flex flex-wrap items-center justify-center gap-x-2 font-display text-4xl leading-tight sm:text-5xl md:text-7xl"
+          className="mt-2 flex flex-col items-center gap-y-1 font-display text-3xl leading-tight sm:mt-3 sm:flex-row sm:gap-x-3 sm:text-5xl md:text-7xl"
           data-aos="fade-up"
           data-aos-delay="200"
         >

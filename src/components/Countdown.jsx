@@ -55,14 +55,14 @@ function Countdown() {
         </p>
 
         <div
-          className="mt-8 flex justify-center gap-2 sm:mt-12 sm:gap-4 md:gap-8"
+          className="mt-8 flex justify-center gap-1.5 sm:mt-12 sm:gap-4 md:gap-8"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           {items.map((item) => (
             <div key={item.label} className="flex flex-col items-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white/20 backdrop-blur-md shadow-lg sm:h-20 sm:w-20 md:h-28 md:w-28">
-                <span className="font-display text-xl text-white sm:text-3xl md:text-5xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/20 backdrop-blur-md shadow-lg sm:h-20 sm:w-20 md:h-28 md:w-28">
+                <span className="font-display text-lg text-white sm:text-3xl md:text-5xl">
                   {String(item.value).padStart(2, '0')}
                 </span>
               </div>

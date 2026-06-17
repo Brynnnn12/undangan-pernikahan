@@ -22,35 +22,35 @@ const EVENTS = [
 
 function Event() {
   return (
-    <section className="bg-cream px-6 py-20 md:py-28">
+    <section className="bg-cream px-4 py-16 sm:px-6 md:py-28">
       <div className="mx-auto max-w-5xl">
         <h2
-          className="text-center font-display text-4xl text-gold md:text-5xl"
+          className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
           data-aos="fade-down"
         >
           Acara
         </h2>
         <p
-          className="mt-3 text-center text-sm text-soft-gray md:text-base"
+          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           Merupakan suatu kehormatan jika Anda berkenan hadir
         </p>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:mt-14 sm:gap-8 md:grid-cols-2">
           {EVENTS.map((event, i) => (
             <div
               key={event.title}
-              className="rounded-xl border border-gold/20 bg-white p-8 shadow-lg"
+              className="rounded-xl border border-gold/20 bg-white p-6 shadow-lg sm:p-8"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
-              <h3 className="font-display text-3xl text-gold">
+              <h3 className="font-display text-2xl text-gold sm:text-3xl">
                 {event.title}
               </h3>
 
-              <div className="mt-6 space-y-4">
+              <div className="mt-4 space-y-3 sm:mt-6 sm:space-y-4">
                 <div className="flex items-start gap-3">
                   <HiCalendarDays className="mt-0.5 text-xl text-gold" />
                   <div>

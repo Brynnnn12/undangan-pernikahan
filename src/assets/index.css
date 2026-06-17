@@ -15,12 +15,26 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
   color: var(--color-dark);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .glass {
@@ -49,7 +63,8 @@ body {
 }
 
 .gallery-img {
-  @apply w-full h-full object-cover transition-transform duration-500 ease-out;
+  @apply w-full h-auto object-cover transition-transform duration-500 ease-out;
+  display: block;
 }
 
 .gallery-img:hover {

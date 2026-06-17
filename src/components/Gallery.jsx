@@ -49,11 +49,11 @@ function Gallery() {
           Cerita kami dalam gambar
         </p>
 
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-14 sm:grid-cols-2 sm:gap-4 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-2 sm:mt-14 sm:gap-3 md:grid-cols-3">
           {GALLERY_IMAGES.map((img, i) => (
             <div
               key={img.id}
-              className="group relative aspect-[4/3] overflow-hidden rounded-xl shadow-md"
+              className="group relative overflow-hidden rounded-xl shadow-md"
               data-aos="fade-up"
               data-aos-delay={i * 100}
             >
