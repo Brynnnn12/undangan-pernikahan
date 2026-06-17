@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@theme {
+  --color-cream: #FFF8F0;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #B8962E;
+  --color-gold-light: #E8D48B;
+  --color-soft-gray: #8B8B8B;
+  --color-dark: #2D2D2D;
+  --color-rose: #D4A5A5;
+  --font-display: "Great Vibes", cursive;
+  --font-body: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5E6A3 50%, #D4AF37 100%);
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.timeline-line {
+  @apply absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2;
+  background: linear-gradient(to bottom, #D4AF37, #E8D48B, #D4AF37);
+}
+
+.gallery-img {
+  @apply w-full h-full object-cover transition-transform duration-500 ease-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.08);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
