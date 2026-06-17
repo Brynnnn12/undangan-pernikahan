@@ -3,7 +3,7 @@ import { HiGift, HiCheck } from 'react-icons/hi2'
 import { HiOutlineClipboardCopy } from 'react-icons/hi'
 
 const BANKS = [
-  { bank: 'BCA', account: '1234567890', name: 'David Pratama' },
+  { bank: 'Dana', account: '1234567890', name: 'David Pratama' },
   { bank: 'Mandiri', account: '9876543210', name: 'Sarah Amelia' },
 ]
 

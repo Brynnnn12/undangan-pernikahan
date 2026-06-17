@@ -8,7 +8,7 @@ const EVENTS = [
     time: 'Pukul 08.00 - 10.00 WIB',
     location: 'Masjid Agung Al-Hidayah',
     address: 'Jl. Merdeka No. 45, Jakarta Pusat',
-    mapsUrl: 'https://maps.google.com/?q=Jakarta+Pusat',
+    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
   },
   {
     title: 'Resepsi',
@@ -16,7 +16,7 @@ const EVENTS = [
     time: 'Pukul 11.00 - 17.00 WIB',
     location: 'Grand Ballroom Hotel Indonesia',
     address: 'Jl. Thamrin No. 1, Jakarta Pusat',
-    mapsUrl: 'https://maps.google.com/?q=Grand+Ballroom+Hotel+Indonesia',
+    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
   },
 ]
 
