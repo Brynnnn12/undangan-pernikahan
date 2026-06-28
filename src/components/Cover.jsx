@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
 import AOS from 'aos'
+import FlowerDeco from './FlowerDeco.jsx'
 
 const COUPLE = {
   man: 'David',
@@ -40,6 +41,8 @@ function Cover() {
       </div>
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white sm:px-6">
+        <FlowerDeco side="left" />
+        <FlowerDeco side="right" />
         <p
           className="font-display text-2xl tracking-wide text-gold-light sm:text-4xl md:text-6xl"
           data-aos="fade-down"

@@ -1,3 +1,5 @@
+import FlowerDeco from './FlowerDeco.jsx'
+
 const COUPLE_DATA = {
   man: {
     name: 'David Pratama',
@@ -15,7 +17,9 @@ const COUPLE_DATA = {
 
 function Couple() {
   return (
-    <section className="bg-cream px-4 py-16 sm:px-6 md:py-28">
+    <section className="relative bg-cream px-4 py-16 sm:px-6 md:py-28">
+      <FlowerDeco side="left" />
+      <FlowerDeco side="right" />
       <div className="mx-auto max-w-5xl">
         <h2
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
