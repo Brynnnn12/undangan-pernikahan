@@ -1,17 +1,19 @@
 const GALLERY_IMAGES = [
   {
     id: 1,
-    src: 'https://drive.google.com/uc?export=view&id=1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
+    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
     alt: 'Wedding venue',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80',
+    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb
+',
     alt: 'Wedding reception',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80',
+    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb
+',
     alt: 'Bridal bouquet',
   },
   {
