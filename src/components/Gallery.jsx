@@ -1,7 +1,7 @@
 const GALLERY_IMAGES = [
   {
     id: 1,
-    src: 'https://drive.google.com/file/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb/view?usp=drivesdk',
+    src: 'https://drive.google.com/uc?export=view&id=1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
     alt: 'Wedding venue',
   },
   {
