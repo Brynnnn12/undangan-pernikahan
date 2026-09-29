@@ -2,7 +2,7 @@ const GALLERY_IMAGES = [
   {
     id: 1,
     src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
-    alt: 'Wedding venue',
+    alt: 'Wedding',
   },
   {
     id: 2,
