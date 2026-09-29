@@ -11,8 +11,7 @@ const GALLERY_IMAGES = [
   },
   {
     id: 3,
-    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb
-',
+    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
     alt: 'Bridal bouquet',
   },
   {
