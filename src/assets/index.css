@@ -2,13 +2,14 @@
 @import "aos/dist/aos.css";
 
 @theme {
-  --color-cream: #FFF8F0;
-  --color-gold: #D4AF37;
-  --color-gold-dark: #B8962E;
-  --color-gold-light: #E8D48B;
-  --color-soft-gray: #8B8B8B;
-  --color-dark: #2D2D2D;
-  --color-rose: #D4A5A5;
+  --color-night: #0e0e12;
+  --color-night-soft: #16161c;
+  --color-surface: #1d1d25;
+  --color-ink: #f4f1ea;
+  --color-muted: #a2a2ac;
+  --color-gold: #d4af37;
+  --color-gold-dark: #b8962e;
+  --color-gold-light: #e8d48b;
   --font-display: "Great Vibes", cursive;
   --font-body: "Poppins", sans-serif;
 }
@@ -22,8 +23,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-cream);
-  color: var(--color-dark);
+  background-color: var(--color-night);
+  color: var(--color-ink);
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
@@ -38,10 +39,10 @@ body {
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .gold-gradient {

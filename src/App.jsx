@@ -20,16 +20,14 @@ function App() {
   }, [])
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
+    <div className="relative min-h-screen overflow-x-hidden bg-night text-ink">
       <Cover />
       <div id="content">
         <Couple />
-        {/* <Story /> */}
         <Event />
         <Countdown />
         <Gallery />
         <Gift />
-        {/* <RSVP /> */}
         <Footer />
       </div>
     </div>

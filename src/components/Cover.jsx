@@ -2,17 +2,22 @@ import { useEffect } from 'react'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
 import AOS from 'aos'
 import FlowerDeco from './FlowerDeco.jsx'
+import { COUPLE, getDisplayDate, getParty } from '../data/invitation.js'
 
-const COUPLE = {
-  man: 'David',
-  woman: 'Sarah',
-  date: 'Sabtu, 20 Desember 2026',
+const PARTY_LABEL = {
+  pria: 'Undangan Pihak Pria',
+  wanita: 'Undangan Pihak Wanita',
 }
+
+const COVER_IMAGE =
+  'https://lh3.googleusercontent.com/d/12b0QmgEBS4k1cY0Fgmx2oN7bU2ZHwGwu'
 
 function Cover() {
   const params = new URLSearchParams(window.location.search)
   const guestNameRaw = params.get('to')
   const guestName = guestNameRaw ? decodeURIComponent(guestNameRaw) : ''
+  const party = getParty()
+  const displayDate = getDisplayDate(party)
 
   useEffect(() => {
     AOS.init({
@@ -30,13 +35,18 @@ function Cover() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80)',
-        }}
-      >
+      <div className="absolute inset-0 overflow-hidden bg-night">
+        <div
+          className="absolute inset-0 scale-110 bg-cover bg-center blur-2xl brightness-50"
+          style={{ backgroundImage: `url(${COVER_IMAGE})` }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${COVER_IMAGE})` }}
+          role="img"
+          aria-label="Foto mempelai"
+        />
         <div className="hero-overlay absolute inset-0" />
       </div>
 
@@ -55,9 +65,9 @@ function Cover() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <span>{COUPLE.man}</span>
+          <span>{COUPLE.man.short}</span>
           <span className="text-gold">&</span>
-          <span className="text-gold">{COUPLE.woman}</span>
+          <span className="text-gold">{COUPLE.woman.short}</span>
         </h1>
 
         <p
@@ -65,8 +75,18 @@ function Cover() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          {COUPLE.date}
+          {displayDate}
         </p>
+
+        {party !== 'all' && (
+          <span
+            className="mt-4 rounded-full border border-gold/40 bg-black/30 px-4 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-gold-light backdrop-blur-sm sm:text-xs"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            {PARTY_LABEL[party]}
+          </span>
+        )}
 
         {guestName && (
           <p

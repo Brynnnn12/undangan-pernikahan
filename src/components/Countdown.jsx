@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
+import { getCountdownDate } from '../data/invitation.js'
 
-const WEDDING_DATE = new Date('2026-12-20T08:00:00').getTime()
+const WEDDING_DATE = getCountdownDate()
 
 function getTimeRemaining() {
   const now = new Date().getTime()

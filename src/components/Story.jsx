@@ -26,7 +26,7 @@ const STORIES = [
 
 function Story() {
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 md:py-28">
+    <section className="bg-night px-4 py-16 sm:px-6 md:py-28">
       <div className="mx-auto max-w-4xl">
         <h2
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
@@ -35,7 +35,7 @@ function Story() {
           Love Story
         </h2>
         <p
-          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -60,15 +60,15 @@ function Story() {
                   <div
                     className={`w-full sm:w-5/12 ${isLeft ? 'sm:pr-12 sm:text-right' : 'sm:order-2 sm:pl-12'}`}
                   >
-                    <div className="rounded-xl bg-cream p-5 shadow-md sm:p-6">
+                    <div className="rounded-xl bg-surface p-5 shadow-md sm:p-6">
                       <Icon className="text-xl text-gold sm:text-2xl" />
-                      <h3 className="mt-2 font-display text-xl text-dark sm:text-2xl">
+                      <h3 className="mt-2 font-display text-xl text-ink sm:text-2xl">
                         {story.title}
                       </h3>
                       <p className="mt-1 text-xs font-semibold text-gold">
                         {story.date}
                       </p>
-                      <p className="mt-2 text-sm leading-relaxed text-soft-gray sm:mt-3">
+                      <p className="mt-2 text-sm leading-relaxed text-muted sm:mt-3">
                         {story.description}
                       </p>
                     </div>

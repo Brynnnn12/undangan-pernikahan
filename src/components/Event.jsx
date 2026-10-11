@@ -1,29 +1,14 @@
 import { HiMapPin, HiClock, HiCalendarDays } from 'react-icons/hi2'
 import { HiOutlineMap } from 'react-icons/hi'
 import FlowerDeco from './FlowerDeco.jsx'
-
-const EVENTS = [
-  {
-    title: 'Akad Nikah',
-    date: 'Sabtu, 20 Desember 2026',
-    time: 'Pukul 08.00 - 10.00 WIB',
-    location: 'Masjid Agung Al-Hidayah',
-    address: 'Jl. Merdeka No. 45, Jakarta Pusat',
-    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
-  },
-  {
-    title: 'Resepsi',
-    date: 'Sabtu, 20 Desember 2026',
-    time: 'Pukul 11.00 - 17.00 WIB',
-    location: 'Grand Ballroom Hotel Indonesia',
-    address: 'Jl. Thamrin No. 1, Jakarta Pusat',
-    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
-  },
-]
+import { getEvents } from '../data/invitation.js'
 
 function Event() {
+  const events = getEvents()
+  const isSingle = events.length === 1
+
   return (
-    <section className="relative bg-cream px-4 py-16 sm:px-6 md:py-28">
+    <section className="relative bg-night-soft px-4 py-16 sm:px-6 md:py-28">
       <FlowerDeco side="left" />
       <FlowerDeco side="right" />
       <div className="mx-auto max-w-5xl">
@@ -34,18 +19,22 @@ function Event() {
           Acara
         </h2>
         <p
-          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           Merupakan suatu kehormatan jika Anda berkenan hadir
         </p>
 
-        <div className="mt-10 grid gap-6 sm:mt-14 sm:gap-8 md:grid-cols-2">
-          {EVENTS.map((event, i) => (
+        <div
+          className={`mt-10 grid gap-6 sm:mt-14 sm:gap-8 ${
+            isSingle ? 'mx-auto max-w-xl md:grid-cols-1' : 'md:grid-cols-2'
+          }`}
+        >
+          {events.map((event, i) => (
             <div
-              key={event.title}
-              className="rounded-xl border border-gold/20 bg-white p-6 shadow-lg sm:p-8"
+              key={event.id}
+              className="rounded-xl border border-gold/20 bg-surface p-6 shadow-lg sm:p-8"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
@@ -57,22 +46,22 @@ function Event() {
                 <div className="flex items-start gap-3">
                   <HiCalendarDays className="mt-0.5 text-xl text-gold" />
                   <div>
-                    <p className="text-sm font-medium text-dark">{event.date}</p>
+                    <p className="text-sm font-medium text-ink">{event.date}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <HiClock className="mt-0.5 text-xl text-gold" />
-                  <p className="text-sm text-soft-gray">{event.time}</p>
+                  <p className="text-sm text-muted">{event.time}</p>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <HiMapPin className="mt-0.5 text-xl text-gold" />
                   <div>
-                    <p className="text-sm font-medium text-dark">
+                    <p className="text-sm font-medium text-ink">
                       {event.location}
                     </p>
-                    <p className="text-sm text-soft-gray">{event.address}</p>
+                    <p className="text-sm text-muted">{event.address}</p>
                   </div>
                 </div>
               </div>

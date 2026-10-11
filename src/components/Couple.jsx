@@ -17,7 +17,7 @@ const COUPLE_DATA = {
 
 function Couple() {
   return (
-    <section className="relative bg-cream px-4 py-16 sm:px-6 md:py-28">
+    <section className="relative bg-night px-4 py-16 sm:px-6 md:py-28">
       <FlowerDeco side="left" />
       <FlowerDeco side="right" />
       <div className="mx-auto max-w-5xl">
@@ -28,7 +28,7 @@ function Couple() {
           Kedua Mempelai
         </h2>
         <p
-          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -48,10 +48,10 @@ function Couple() {
                   {person.initial}
                 </span>
               </div>
-              <h3 className="mt-4 font-display text-2xl text-dark sm:mt-6 sm:text-3xl md:text-4xl">
+              <h3 className="mt-4 font-display text-2xl text-ink sm:mt-6 sm:text-3xl md:text-4xl">
                 {person.name}
               </h3>
-              <p className="mt-1 max-w-[220px] text-xs text-soft-gray sm:mt-2 sm:max-w-xs sm:text-sm">
+              <p className="mt-1 max-w-[220px] text-xs text-muted sm:mt-2 sm:max-w-xs sm:text-sm">
                 {person.parent}
               </p>
             </div>

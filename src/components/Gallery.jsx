@@ -1,7 +1,7 @@
 const GALLERY_IMAGES = [
   {
     id: 1,
-    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
+    src: 'https://lh3.googleusercontent.com/d/12b0QmgEBS4k1cY0Fgmx2oN7bU2ZHwGwu',
     alt: 'Wedding',
   },
   {
@@ -33,7 +33,7 @@ const GALLERY_IMAGES = [
 
 function Gallery() {
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 md:py-28">
+    <section className="bg-night px-4 py-16 sm:px-6 md:py-28">
       <div className="mx-auto max-w-5xl">
         <h2
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
@@ -42,7 +42,7 @@ function Gallery() {
           Galeri
         </h2>
         <p
-          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
