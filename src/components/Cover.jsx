@@ -9,8 +9,7 @@ const PARTY_LABEL = {
   wanita: 'Undangan Pihak Wanita',
 }
 
-const COVER_IMAGE =
-  'https://lh3.googleusercontent.com/d/12b0QmgEBS4k1cY0Fgmx2oN7bU2ZHwGwu'
+const COVER_IMAGE = '/image/image7.jpeg'
 
 function Cover() {
   const params = new URLSearchParams(window.location.search)
@@ -42,7 +41,7 @@ function Cover() {
           aria-hidden="true"
         />
         <div
-          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-contain"
           style={{ backgroundImage: `url(${COVER_IMAGE})` }}
           role="img"
           aria-label="Foto mempelai"

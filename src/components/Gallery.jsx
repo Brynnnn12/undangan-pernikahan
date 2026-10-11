@@ -1,34 +1,10 @@
 const GALLERY_IMAGES = [
-  {
-    id: 1,
-    src: 'https://lh3.googleusercontent.com/d/12b0QmgEBS4k1cY0Fgmx2oN7bU2ZHwGwu',
-    alt: 'Wedding',
-  },
-  {
-    id: 2,
-    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
-    alt: 'Wedding reception',
-  },
-  {
-    id: 3,
-    src: 'https://lh3.googleusercontent.com/d/1kYVD04poZnX8dBSZWT6AlvbDbii4RNLb',
-    alt: 'Bridal bouquet',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80',
-    alt: 'Wedding rings',
-  },
-  {
-    id: 5,
-    src: 'https://images.unsplash.com/photo-1464693368231-2483e29595a7?w=600&q=80',
-    alt: 'Wedding decoration',
-  },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&q=80',
-    alt: 'Wedding dress',
-  },
+  { id: 1, src: '/image/image1.jpeg', alt: 'Wedding' },
+  { id: 2, src: '/image/image2.jpeg', alt: 'Wedding reception' },
+  { id: 3, src: '/image/image3.jpeg', alt: 'Bridal bouquet' },
+  { id: 4, src: '/image/image4.jpeg', alt: 'Wedding rings' },
+  { id: 5, src: '/image/image5.jpeg', alt: 'Wedding decoration' },
+  { id: 6, src: '/image/image6.jpeg', alt: 'Wedding dress' },
 ]
 
 function Gallery() {
