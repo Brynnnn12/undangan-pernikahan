@@ -4,10 +4,6 @@ import AOS from 'aos'
 import FlowerDeco from './FlowerDeco.jsx'
 import { COUPLE, getDisplayDate, getParty } from '../data/invitation.js'
 
-const PARTY_LABEL = {
-  pria: 'Undangan Pihak Pria',
-  wanita: 'Undangan Pihak Wanita',
-}
 
 const COVER_IMAGE = '/image/image7.jpeg'
 
@@ -34,7 +30,7 @@ function Cover() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden bg-night">
+      <div className="absolute inset-0 overflow-hidden bg-dark">
         <div
           className="absolute inset-0 scale-110 bg-cover bg-center blur-2xl brightness-50"
           style={{ backgroundImage: `url(${COVER_IMAGE})` }}
@@ -77,15 +73,6 @@ function Cover() {
           {displayDate}
         </p>
 
-        {party !== 'all' && (
-          <span
-            className="mt-4 rounded-full border border-gold/40 bg-black/30 px-4 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-gold-light backdrop-blur-sm sm:text-xs"
-            data-aos="fade-up"
-            data-aos-delay="450"
-          >
-            {PARTY_LABEL[party]}
-          </span>
-        )}
 
         {guestName && (
           <p

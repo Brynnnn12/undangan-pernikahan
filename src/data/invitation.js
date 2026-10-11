@@ -1,6 +1,6 @@
 export const COUPLE = {
-  man: { short: 'David', full: 'David Pratama' },
-  woman: { short: 'Sarah', full: 'Sarah Amelia' },
+  man: { short: 'Davit', full: 'Davit Dewantoro' },
+  woman: { short: 'Nia', full: 'Wike Amarta Nia' },
 }
 
 export const EVENTS = [
@@ -9,30 +9,30 @@ export const EVENTS = [
     party: 'pria',
     title: 'Resepsi Pria',
     date: 'Selasa, 20 Oktober 2026',
-    time: 'Pukul 19.00 - 22.00 WIB',
-    location: 'Gedung Serbaguna',
-    address: 'Jl. Raya Cempaka No. 12, Bandung',
-    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
+    time: 'Pukul : Selera Anda',
+    location: 'Rumah Mempelai Pria',
+    address: 'Jln. Timur Stasiun Comal Desa Purwosari Kec. Comal Kab. Pemalang',
+    mapsUrl: 'https://maps.app.goo.gl/6J48oZadYEFqCVsY9?g_st=ac',
   },
   {
     id: 'akad-nikah',
-    party: 'wanita',
+    party: 'both',
     title: 'Akad Nikah',
     date: 'Jumat, 23 Oktober 2026',
-    time: 'Pukul 08.00 - 10.00 WIB',
+    time: 'Pukul 09.00 WIB s/d Selesai',
     location: 'Kediaman Mempelai Wanita',
-    address: 'Jl. Merdeka No. 88, Bandung',
-    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
+    address: 'Jln tratai raya Purwosari comal',
+    mapsUrl: 'https://maps.app.goo.gl/WgwAbRMiUiqgdMT97?g_st=ac',
   },
   {
     id: 'resepsi-wanita',
     party: 'wanita',
     title: 'Resepsi Wanita',
     date: 'Jumat, 23 Oktober 2026',
-    time: 'Pukul 18.00 - 21.00 WIB',
-    location: 'Hotel Grand Sari',
-    address: 'Jl. Merdeka No. 88, Bandung',
-    mapsUrl: 'https://www.google.com/maps?q=-6.903677,109.5356858&z=17&hl=id',
+    time: 'Pukul : Selera Anda',
+    location: 'Kediaman Mempelai Wanita',
+    address: 'Jln tratai raya Purwosari comal',
+    mapsUrl: 'https://maps.app.goo.gl/WgwAbRMiUiqgdMT97?g_st=ac',
   },
 ]
 
@@ -57,7 +57,9 @@ export function getParty() {
 
 export function getEvents(party = getParty()) {
   if (party === 'pria' || party === 'wanita') {
-    return EVENTS.filter((event) => event.party === party)
+    return EVENTS.filter(
+      (event) => event.party === party || event.party === 'both',
+    )
   }
   return EVENTS
 }

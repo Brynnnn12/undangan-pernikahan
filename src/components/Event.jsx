@@ -8,7 +8,7 @@ function Event() {
   const isSingle = events.length === 1
 
   return (
-    <section className="relative bg-night-soft px-4 py-16 sm:px-6 md:py-28">
+    <section className="relative bg-cream px-4 py-16 sm:px-6 md:py-28">
       <FlowerDeco side="left" />
       <FlowerDeco side="right" />
       <div className="mx-auto max-w-5xl">
@@ -19,7 +19,7 @@ function Event() {
           Acara
         </h2>
         <p
-          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -34,7 +34,7 @@ function Event() {
           {events.map((event, i) => (
             <div
               key={event.id}
-              className="rounded-xl border border-gold/20 bg-surface p-6 shadow-lg sm:p-8"
+              className="rounded-xl border border-gold/20 bg-white p-6 shadow-lg sm:p-8"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
@@ -46,22 +46,22 @@ function Event() {
                 <div className="flex items-start gap-3">
                   <HiCalendarDays className="mt-0.5 text-xl text-gold" />
                   <div>
-                    <p className="text-sm font-medium text-ink">{event.date}</p>
+                    <p className="text-sm font-medium text-dark">{event.date}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <HiClock className="mt-0.5 text-xl text-gold" />
-                  <p className="text-sm text-muted">{event.time}</p>
+                  <p className="text-sm text-soft-gray">{event.time}</p>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <HiMapPin className="mt-0.5 text-xl text-gold" />
                   <div>
-                    <p className="text-sm font-medium text-ink">
+                    <p className="text-sm font-medium text-dark">
                       {event.location}
                     </p>
-                    <p className="text-sm text-muted">{event.address}</p>
+                    <p className="text-sm text-soft-gray">{event.address}</p>
                   </div>
                 </div>
               </div>

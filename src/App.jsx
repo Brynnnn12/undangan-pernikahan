@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-night text-ink">
+    <div className="relative min-h-screen overflow-x-hidden bg-cream">
       <Cover />
       <div id="content">
         <Couple />

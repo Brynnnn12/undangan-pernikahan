@@ -36,7 +36,7 @@ function RSVP() {
   }
 
   return (
-    <section className="bg-night px-4 py-16 sm:px-6 md:py-28">
+    <section className="bg-white px-4 py-16 sm:px-6 md:py-28">
       <div className="mx-auto max-w-4xl">
         <h2
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
@@ -45,7 +45,7 @@ function RSVP() {
           RSVP
         </h2>
         <p
-          className="mt-2 text-center text-xs text-muted sm:mt-3 sm:text-sm md:text-base"
+          className="mt-2 text-center text-xs text-soft-gray sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -55,12 +55,12 @@ function RSVP() {
         <div className="mt-10 grid gap-8 sm:mt-14 sm:gap-10 md:grid-cols-2">
           <form
             onSubmit={handleSubmit}
-            className="rounded-xl border border-gold/20 bg-surface p-6 shadow-lg sm:p-8"
+            className="rounded-xl border border-gold/20 bg-cream p-6 shadow-lg sm:p-8"
             data-aos="fade-right"
           >
             <div className="space-y-4 sm:space-y-5">
               <div>
-                <label className="block text-sm font-medium text-ink">
+                <label className="block text-sm font-medium text-dark">
                   Nama
                 </label>
                 <input
@@ -70,12 +70,12 @@ function RSVP() {
                   onChange={handleChange}
                   required
                   placeholder="Masukkan nama Anda"
-                  className="mt-1.5 w-full rounded-lg border border-gold/20 bg-night px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
+                  className="mt-1.5 w-full rounded-lg border border-gold/20 bg-white px-4 py-2.5 text-sm text-dark outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-ink">
+                <label className="block text-sm font-medium text-dark">
                   Kehadiran
                 </label>
                 <select
@@ -83,7 +83,7 @@ function RSVP() {
                   value={form.attendance}
                   onChange={handleChange}
                   required
-                  className="mt-1.5 w-full rounded-lg border border-gold/20 bg-night px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
+                  className="mt-1.5 w-full rounded-lg border border-gold/20 bg-white px-4 py-2.5 text-sm text-dark outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
                 >
                   <option value="">Pilih kehadiran</option>
                   <option value="hadir">Hadir</option>
@@ -93,7 +93,7 @@ function RSVP() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-ink">
+                <label className="block text-sm font-medium text-dark">
                   Pesan & Doa
                 </label>
                 <textarea
@@ -102,7 +102,7 @@ function RSVP() {
                   onChange={handleChange}
                   rows={4}
                   placeholder="Tulis pesan dan doa untuk kedua mempelai"
-                  className="mt-1.5 w-full resize-none rounded-lg border border-gold/20 bg-night px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
+                  className="mt-1.5 w-full resize-none rounded-lg border border-gold/20 bg-white px-4 py-2.5 text-sm text-dark outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
                 />
               </div>
 
@@ -119,24 +119,24 @@ function RSVP() {
           <div data-aos="fade-left">
             <div className="mb-4 flex items-center gap-2">
               <HiChat className="text-xl text-gold" />
-              <h3 className="font-semibold text-ink">
+              <h3 className="font-semibold text-dark">
                 Ucapan & Doa ({messages.length})
               </h3>
             </div>
 
             <div className="max-h-[400px] space-y-3 overflow-y-auto sm:max-h-[500px]">
               {messages.length === 0 ? (
-                <p className="rounded-lg bg-surface p-6 text-center text-sm text-muted">
+                <p className="rounded-lg bg-cream p-6 text-center text-sm text-soft-gray">
                   Belum ada ucapan. Jadilah yang pertama!
                 </p>
               ) : (
                 messages.map((msg) => (
                   <div
                     key={msg.id}
-                    className="rounded-lg border border-gold/10 bg-surface p-4"
+                    className="rounded-lg border border-gold/10 bg-cream p-4"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-semibold text-ink">
+                      <span className="text-sm font-semibold text-dark">
                         {msg.name}
                       </span>
                       <span
@@ -156,11 +156,11 @@ function RSVP() {
                       </span>
                     </div>
                     {msg.message && (
-                      <p className="mt-2 text-sm leading-relaxed text-muted">
+                      <p className="mt-2 text-sm leading-relaxed text-soft-gray">
                         "{msg.message}"
                       </p>
                     )}
-                    <p className="mt-2 text-xs text-muted">{msg.date}</p>
+                    <p className="mt-2 text-xs text-soft-gray">{msg.date}</p>
                   </div>
                 ))
               )}
