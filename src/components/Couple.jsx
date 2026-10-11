@@ -2,14 +2,14 @@ import FlowerDeco from './FlowerDeco.jsx'
 
 const COUPLE_DATA = {
   man: {
-    name: 'Davit Dewantoro',
-    parent: 'Putra pertama dari Bapak Masrup dan Ibu Casriyah',
+    name: 'Davit Dewantara',
+    parent: 'Putra dari Bpk. Masrup & Ibu Casriyah',
     photo: null,
     initial: 'D',
   },
   woman: {
     name: 'Wike Amarta Nia',
-    parent: 'Putri dari Bapak Karsadi dan Ibu Aminah',
+    parent: 'Putri dari Bpk. Karsadi & Ibu Aminah',
     photo: null,
     initial: 'N',
   },
@@ -29,14 +29,13 @@ function Couple() {
           Mempelai
         </h2>
 
+        {/* Teks deskripsi dibuat ringkas, manis, dan tidak kaku */}
         <p
-          className="mx-auto mt-3 max-w-2xl text-center text-xs leading-relaxed text-soft-gray sm:text-sm md:text-base"
+          className="mx-auto mt-3 max-w-xl text-center text-xs leading-relaxed text-soft-gray sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Dengan penuh rasa syukur dan kebahagiaan, kami memperkenalkan
-          kedua mempelai yang akan memulai perjalanan baru dalam ikatan
-          suci pernikahan.
+          Dengan penuh rasa syukur, kami ingin berbagi kebahagiaan menyambut hari istimewa ini bersama kalian.
         </p>
 
         <div className="mt-10 grid gap-10 sm:mt-16 sm:gap-12 md:grid-cols-2 md:gap-16">

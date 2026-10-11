@@ -1,10 +1,10 @@
 const GALLERY_IMAGES = [
-  { id: 1, src: '/image/image8.jpeg', alt: 'Momen kebersamaan kedua mempelai' },
-  { id: 2, src: '/image/image2.jpeg', alt: 'Kenangan indah perjalanan cinta' },
-  { id: 3, src: '/image/image3.jpeg', alt: 'Detail bunga yang indah' },
-  { id: 4, src: '/image/image4.jpeg', alt: 'Simbol cinta dan ikatan pernikahan' },
-  { id: 5, src: '/image/image9.jpeg', alt: 'Dekorasi pernikahan yang elegan' },
-  { id: 6, src: '/image/image10.jpeg', alt: 'Detail busana pernikahan' },
+  { id: 1, src: '/image/image8.jpeg', alt: 'Momen kebersamaan' },
+  { id: 2, src: '/image/image2.jpeg', alt: 'Potret bahagia' },
+  { id: 3, src: '/image/image3.jpeg', alt: 'Detail dekorasi' },
+  { id: 4, src: '/image/image4.jpeg', alt: 'Cincin pernikahan' },
+  { id: 5, src: '/image/image9.jpeg', alt: 'Suasana acara' },
+  { id: 6, src: '/image/image10.jpeg', alt: 'Detail busana' },
 ]
 
 function Gallery() {
@@ -15,17 +15,16 @@ function Gallery() {
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
           data-aos="fade-down"
         >
-          Galeri Kenangan
+          Galeri Foto
         </h2>
 
+        {/* Teks sub-judul dibuat simpel, ringan, dan langsung pada intinya */}
         <p
-          className="mx-auto mt-3 max-w-2xl text-center text-xs leading-relaxed text-soft-gray sm:text-sm md:text-base"
+          className="mx-auto mt-3 max-w-lg text-center text-xs leading-relaxed text-soft-gray sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Setiap momen menyimpan cerita, setiap langkah membawa kita
-          lebih dekat, hingga akhirnya dua hati memilih untuk berjalan
-          bersama selamanya.
+          Sekilas potret kebahagiaan dan cerita kebersamaan kami.
         </p>
 
         <div className="mt-10 grid grid-cols-2 gap-2 sm:mt-14 sm:gap-3 md:grid-cols-3">

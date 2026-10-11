@@ -1,5 +1,5 @@
 export const COUPLE = {
-  man: { short: 'Davit', full: 'Davit Dewantoro' },
+  man: { short: 'Davit', full: 'Davit Dewantara' },
   woman: { short: 'Nia', full: 'Wike Amarta Nia' },
 }
 
@@ -15,21 +15,11 @@ export const EVENTS = [
     mapsUrl: 'https://maps.app.goo.gl/6J48oZadYEFqCVsY9?g_st=ac',
   },
   {
-    id: 'akad-nikah',
-    party: 'both',
-    title: 'Akad Nikah',
-    date: 'Jumat, 23 Oktober 2026',
-    time: 'Pukul 09.00 WIB s/d Selesai',
-    location: 'Kediaman Mempelai Wanita',
-    address: 'Jln tratai raya Purwosari comal',
-    mapsUrl: 'https://maps.app.goo.gl/WgwAbRMiUiqgdMT97?g_st=ac',
-  },
-  {
-    id: 'resepsi-wanita',
+    id: 'akad-resepsi-wanita',
     party: 'wanita',
-    title: 'Resepsi Wanita',
+    title: 'Akad Nikah & Resepsi Wanita',
     date: 'Jumat, 23 Oktober 2026',
-    time: 'Pukul : Selera Anda',
+    time: 'Akad 09.00 WIB s/d Selesai • Resepsi: Selera Anda',
     location: 'Kediaman Mempelai Wanita',
     address: 'Jln tratai raya Purwosari comal',
     mapsUrl: 'https://maps.app.goo.gl/WgwAbRMiUiqgdMT97?g_st=ac',
@@ -57,9 +47,7 @@ export function getParty() {
 
 export function getEvents(party = getParty()) {
   if (party === 'pria' || party === 'wanita') {
-    return EVENTS.filter(
-      (event) => event.party === party || event.party === 'both',
-    )
+    return EVENTS.filter((event) => event.party === party)
   }
   return EVENTS
 }

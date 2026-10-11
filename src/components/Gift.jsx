@@ -4,7 +4,7 @@ import { HiOutlineClipboardCopy } from 'react-icons/hi'
 import { getParty } from '../data/invitation.js'
 
 const BANKS = [
-  { party: 'pria', bank: 'DANA', account: '085817794810', name: 'Davit Dewantoro' },
+  { party: 'pria', bank: 'DANA', account: '085817794810', name: 'Davit Dewantara' },
   { party: 'wanita', bank: 'DANA', account: '085229297865', name: 'Wike Amarta Nia' },
 ]
 
@@ -31,16 +31,16 @@ function Gift() {
           className="text-center font-display text-3xl text-gold sm:text-4xl md:text-5xl"
           data-aos="fade-down"
         >
-          Amplop Digital
+          Tanda Kasih
         </h2>
 
-        {/* Teks sub-judul lebih kasual & hangat untuk teman sebaya */}
+        {/* Sub-judul disesuaikan */}
         <p
           className="mt-2 text-center text-xs leading-relaxed text-soft-gray sm:mt-3 sm:text-sm md:text-base"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Kehadiran dan doa dari kalian sudah lebih dari cukup. Tapi kalau kalian ingin mengirimkan tanda kasih, bisa melalui:
+          Doa restu kalian adalah hal yang paling berharga. Namun, jika berhalangan hadir, tanda kasih dapat dikirim melalui DANA berikut:
         </p>
 
         <div
@@ -52,10 +52,9 @@ function Gift() {
             <HiGift className="text-3xl text-gold sm:text-4xl" />
 
             <h3 className="mt-3 font-display text-xl text-dark sm:mt-4 sm:text-2xl">
-              Kirim Tanda Kasih
+              Kirim Hadiah
             </h3>
 
-            {/* Deskripsi card lebih santai */}
             <p className="mt-1 text-xs text-soft-gray sm:mt-2 sm:text-sm">
               Terima kasih banyak sudah ikut merayakan hari bahagia kami! 🤍
             </p>
@@ -94,7 +93,6 @@ function Gift() {
                     {item.account}
                   </p>
 
-                  {/* Penulisan nama dibuat simpel tanpa a.n. */}
                   <p className="mt-1 text-xs text-soft-gray">
                     {item.name}
                   </p>
